@@ -1,4 +1,3 @@
-// src/pages/Dashboard.jsx
 import React from 'react'
 import { accounts } from '../data/accounts'
 import { formatCurrency, formatDate } from '../utils/formatters'
@@ -178,4 +177,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Dashboard;
