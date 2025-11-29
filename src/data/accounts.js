@@ -1,12 +1,11 @@
-// src/data/accounts.js
 export const accounts = [
   {
     id: 1,
     type: 'checking',
     name: 'Citi Priority Checking',
     number: '****4582',
-    balance: 12543.67,
-    available: 12543.67,
+    balance: 48650.00,
+    available: 48650.00,
     currency: 'USD'
   },
   {
@@ -14,8 +13,8 @@ export const accounts = [
     type: 'savings',
     name: 'Citi Savings',
     number: '****7821',
-    balance: 35680.25,
-    available: 35680.25,
+    balance: 138463.54,
+    available: 138463.54,
     currency: 'USD'
   },
   {

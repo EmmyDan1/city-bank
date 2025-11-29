@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { useAuth } from '../hooks/useAuth'
 import { useNavigate } from 'react-router-dom'
+import citiBankLogo from '/public/citibank-logo.jpg'
 
 const NavBar = ({ onMenuClick }) => {
   const { user, logout } = useAuth()
@@ -31,13 +32,14 @@ const NavBar = ({ onMenuClick }) => {
 
             {/* Logo */}
             <div className="flex items-center space-x-4">
-              <div className="flex items-center justify-center w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/10">
+              {/* <div className="flex items-center justify-center w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/10">
                 <div className="w-8 h-8 bg-white rounded-xl flex items-center justify-center shadow-inner">
                   <svg className="w-5 h-5 text-citi-blue-600" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                   </svg>
                 </div>
-              </div>
+              </div> */}
+              <img src={citiBankLogo} className='w-22 h-16'  />
               <div className="hidden sm:block">
                 <span className="text-2xl font-bold text-white tracking-tight">
                   Citi Bank
@@ -102,7 +104,7 @@ const NavBar = ({ onMenuClick }) => {
               {showUserMenu && (
                 <div className="absolute right-0 mt-3 w-64 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 py-3 z-50">
                   <div className="px-4 py-3 border-b border-white/10">
-                    <p className="text-sm font-semibold text-gray-900">{user?.name}</p>
+                    <p className="text-xl font-semibold text-gray-900">{user?.name}</p>
                     <p className="text-sm text-gray-600 truncate">{user?.email}</p>
                     <div className="inline-flex items-center px-2 py-1 mt-1 bg-gradient-to-r from-citi-blue-500 to-citi-blue-600 rounded-full">
                       <span className="text-xs font-medium text-white">Premium Banking</span>
@@ -149,7 +151,7 @@ const NavBar = ({ onMenuClick }) => {
         <div className="lg:hidden border-t border-white/20 pt-4 pb-3">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-semibold text-white">{user?.name}</p>
+              <p className="text-xl font-semibold text-white">{user?.name}</p>
               <p className="text-xs text-white/70">Premium Client</p>
             </div>
             <button
