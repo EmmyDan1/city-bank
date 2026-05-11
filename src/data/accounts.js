@@ -13,8 +13,8 @@ export const accounts = [
     type: 'savings',
     name: 'Citi Savings',
     number: '****7821',
-    balance: 138463.54,
-    available: 138463.54,
+    balance: 218463.54,
+    available: 218463.54,
     currency: 'USD'
   },
   {

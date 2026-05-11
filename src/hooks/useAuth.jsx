@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
           const userData = {
             id: 1,
             email: email,
-            name: 'Curry Lenny',
+            name: 'Curry Charles',
             avatar: null
           }
           setIsAuthenticated(true)
