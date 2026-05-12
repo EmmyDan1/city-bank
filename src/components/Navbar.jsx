@@ -39,7 +39,7 @@ const NavBar = ({ onMenuClick }) => {
                   </svg>
                 </div>
               </div> */}
-              <img src={citiBankLogo} className='w-22 h-16'  />
+              <img src={citiBankLogo} className='w-22 h-12 rounded-3xl'  />
               <div className="hidden sm:block">
                 <span className="text-2xl font-bold text-white tracking-tight">
                   Citi Bank
